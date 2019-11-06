@@ -1,5 +1,6 @@
 package dev.ujjwal.messageshareapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -12,9 +13,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_showToast.setOnClickListener {
+        btn_showToast.setOnClickListener {
             Log.i("MainActivity", "Button clicked !")
             Toast.makeText(applicationContext, "Button clicked !", Toast.LENGTH_SHORT).show()
+        }
+
+        btn_sendUserMessageToNextActivity.setOnClickListener {
+
+            val message: String = et_userMessage.text.toString()
+            et_userMessage.setText("")
+
+            //Explicit Intent
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("user_message", message)
+            startActivity(intent)
         }
     }
 }
