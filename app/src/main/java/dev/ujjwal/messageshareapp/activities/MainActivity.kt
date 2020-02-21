@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import dev.ujjwal.messageshareapp.R
+import dev.ujjwal.messageshareapp.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         btn_showToast.setOnClickListener {
             Log.i("MainActivity", "Button clicked !")
-            Toast.makeText(applicationContext, "Button clicked !", Toast.LENGTH_SHORT).show()
+            showToast("Button clicked !")
         }
 
         btn_sendUserMessageToNextActivity.setOnClickListener {

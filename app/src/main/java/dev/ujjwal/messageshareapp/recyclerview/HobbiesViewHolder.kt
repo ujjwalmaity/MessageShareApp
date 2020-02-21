@@ -3,8 +3,8 @@ package dev.ujjwal.messageshareapp.recyclerview
 import android.content.Context
 import android.content.Intent
 import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import dev.ujjwal.messageshareapp.showToast
 import kotlinx.android.synthetic.main.layout_hobbies_view.view.*
 
 class HobbiesViewHolder(itemView: View, context: Context) : RecyclerView.ViewHolder(itemView) {
@@ -14,7 +14,7 @@ class HobbiesViewHolder(itemView: View, context: Context) : RecyclerView.ViewHol
 
     init {
         itemView.setOnClickListener {
-            Toast.makeText(context, currentHobby!!.title + " clicked!", Toast.LENGTH_SHORT).show()
+            context.showToast(currentHobby!!.title + " clicked!")
         }
 
         itemView.img_share.setOnClickListener {
