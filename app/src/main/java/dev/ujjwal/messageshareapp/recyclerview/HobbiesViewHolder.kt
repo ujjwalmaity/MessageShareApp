@@ -14,18 +14,22 @@ class HobbiesViewHolder(itemView: View, context: Context) : RecyclerView.ViewHol
 
     init {
         itemView.setOnClickListener {
-            context.showToast(currentHobby!!.title + " clicked!")
+            currentHobby?.let {
+                context.showToast(currentHobby!!.title + " clicked!")
+            }
         }
 
         itemView.img_share.setOnClickListener {
-            val message: String = "My hobby is " + currentHobby!!.title
+            currentHobby?.let {
+                val message: String = "My hobby is " + currentHobby!!.title
 
-            //Implicit Intent
-            val intent = Intent()
-            intent.action = Intent.ACTION_SEND
-            intent.putExtra(Intent.EXTRA_TEXT, message)
-            intent.type = "text/plain"
-            context.startActivity(Intent.createChooser(intent, "Share to : "))
+                //Implicit Intent
+                val intent = Intent()
+                intent.action = Intent.ACTION_SEND
+                intent.putExtra(Intent.EXTRA_TEXT, message)
+                intent.type = "text/plain"
+                context.startActivity(Intent.createChooser(intent, "Share to : "))
+            }
         }
     }
 
@@ -33,6 +37,8 @@ class HobbiesViewHolder(itemView: View, context: Context) : RecyclerView.ViewHol
         this.currentHobby = hobby
         this.currentPosition = position
 
-        itemView.tv_title.text = hobby!!.title
+        hobby?.let {
+            itemView.tv_title.text = hobby.title
+        }
     }
 }
