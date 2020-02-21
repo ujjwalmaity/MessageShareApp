@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import dev.ujjwal.messageshareapp.R
 
-class HobbiesViewAdapter(val context: Context, val hobbies: List<Hobby>) :
+class HobbiesViewAdapter(private val context: Context, private val hobbies: List<Hobby>) :
     RecyclerView.Adapter<HobbiesViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HobbiesViewHolder {

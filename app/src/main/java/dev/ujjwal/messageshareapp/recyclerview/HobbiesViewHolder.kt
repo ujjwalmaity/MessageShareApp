@@ -9,8 +9,8 @@ import kotlinx.android.synthetic.main.layout_hobbies_view.view.*
 
 class HobbiesViewHolder(itemView: View, context: Context) : RecyclerView.ViewHolder(itemView) {
 
-    var currentHobby: Hobby? = null
-    var currentPosition: Int = 0
+    private var currentHobby: Hobby? = null
+    private var currentPosition: Int = 0
 
     init {
         itemView.setOnClickListener {

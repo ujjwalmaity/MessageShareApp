@@ -1,7 +1,8 @@
-package dev.ujjwal.messageshareapp
+package dev.ujjwal.messageshareapp.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import dev.ujjwal.messageshareapp.R
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
