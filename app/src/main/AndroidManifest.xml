@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SecondActivity" />
-        <activity android:name=".activities.HobbiesActivity" />
+        <activity
+            android:name=".activities.SecondActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activities.HobbiesActivity"
+            android:theme="@style/AppTheme2" />
     </application>
 
 </manifest>
