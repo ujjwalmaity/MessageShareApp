@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">বার্তা শেয়ার অ্যাপ</string>
+
+    <string name="btn_show_toast">টোস্ট দেখান</string>
+    <string name="btn_send_data_to_activity">পরবর্তী ক্রিয়াকলাপে ডেটা প্রেরণ করুন</string>
+    <string name="btn_share_to_apps">অন্যান্য অ্যাপ্লিকেশনগুলিতে শেয়ার করুন</string>
+    <string name="btn_recycler_view">পুনর্ব্যবহারযোগ্য ডেমো</string>
+
+    <string name="et_enter_msg">আপনার বার্তাটি লিখুন</string>
+
+    <string name="btn_clicked">বাটন ক্লিক!</string>
+    <string name="share_to">শেয়ার করুন:</string>
+    <string name="my_hobby_is">আমার শখ হচ্ছে &#160;</string>
+    <string name="clicked">&#160; ক্লিক!</string>
+
+    <string name="swimming">সাঁতার</string>
+    <string name="reading">পড়া</string>
+    <string name="walking">হাঁটা</string>
+    <string name="sleeping">ঘুমানো</string>
+    <string name="gaming">খেলা</string>
+    <string name="programming">প্রোগ্রামিং</string>
+    <string name="talking">কথা বলা</string>
+    <string name="acting">অভিনয়</string>
+    <string name="baking">পোড়ানো</string>
+    <string name="coloring">রং করা</string>
+    <string name="cycling">সাইকেলে চলা</string>
+    <string name="dancing">নাচ</string>
+    <string name="drawing">অঙ্কন</string>
+    <string name="flying_kite">ঘুড়ি ওড়ানো</string>
+    <string name="gardening">উদ্যান পরিচর্যা</string>
+    <string name="painting">পেন্টিং</string>
+    <string name="running">দৌড়ানো</string>
+    <string name="singing">গান করা</string>
+</resources>
